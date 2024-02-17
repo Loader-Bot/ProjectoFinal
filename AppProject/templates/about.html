@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Acerca de..{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Acerca de</h1>
+
+    <p>Bienvenido a The Daily Gathering, una pagina dedicada a que usuarios puedan publicar y leer noticias en comun sobre todas las mas importantes novedades relacionadas con Magic The Gathering.</p>
+
+    <h2>Sobre el Autor</h2>
+
+    <div class="author-info">
+        {% load static %}
+        <img src="{% static 'Image/German_Gonzalez.png' %}" alt="Alejandro Isnardi" style="border-radius: 80%; max-width: 150px;">
+    </br>
+        <p><strong>German Gonzalez</strong> es un principiante en el mundo de la programacion y desarrollo de software, que ha comenzado sus primeros pasos a partir de esta iniciativa.
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

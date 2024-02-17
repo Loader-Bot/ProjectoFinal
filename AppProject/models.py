@@ -31,3 +31,15 @@ class Avatar(models.Model):
     def __str__(self):
         return f"{self.user}"
     
+class Usuario(models.Model):
+
+    nombre = models.CharField(max_length = 20)
+    apellido = models.CharField(max_length = 30)
+    email = models.EmailField(default="default@example.com")
+
+    class Meta:
+        verbose_name_plural = "usuarios"
+        ordering =["nombre"]
+
+    def __str__(self):
+            return f'{self.nombre}, {self.apellido}'

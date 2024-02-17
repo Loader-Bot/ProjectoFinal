@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ValidationError
 import re
-
+from AppProject.models import NewsPost
 
 
 def validate_password(value):
@@ -41,7 +41,6 @@ class UserRegistrationForm(UserCreationForm):
         model = User
         fields = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
 
-
 class UserEditForm(forms.ModelForm):
     first_name = forms.CharField(max_length=30, help_text='Ingresa tu nombre')
     last_name = forms.CharField(max_length=30, help_text='Ingresa tu apellido.')
@@ -54,4 +53,9 @@ class UserEditForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'email','password1','password2']   
 
 class AvatarForm(forms.Form):
-    image = forms.ImageField()         
+    image = forms.ImageField()     
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = NewsPost
+        fields = ['title', 'subtitle', 'content', 'image']        

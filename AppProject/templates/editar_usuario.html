@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Usuario{% endblock %}
+
+{% block content %}
+</br>
+</br>
+</br>
+</br>
+<div class="container mt-5">
+
+    <form action="{% url 'editar_usuario' %}" method="post" class="cold-mid-12">
+        {% csrf_token %}
+        <table>
+            {{formulario.as_table}}
+        </table>
+        <input type="submit" value="Enviar" class="btn btn-primary">
+        <input type="cancel" value="Cancelar" class="btn btn-secondary" onclick="location.href ='{% url 'index' %}'">
+    </form>
+
+
+</div>
+
+
+{% endblock %}

@@ -13,27 +13,37 @@
         {% load static %}
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     </head>
-    <body>
+    <body style="background-color: rgb(65, 141, 176);">
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Admin</a></li> 
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="{% url 'about' %}">Acerca de...</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/admin/">Admin</a></li> 
                     </ul>    
             </div>
             <div class="container">
                 <ul class="navbar-nav ms-auto">
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PUBLICAR</a>
+                        <a class="nav-link" href="{% url 'publicar_post' %}">PUBLICAR</a>
                       </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hola {{ user.first_name }}</a>
+                        <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hola {{ user.first_name }}
+                            {% if 'avatar_url' in request.session %}
+                            <img src="{{ request.session.avatar_url }}" alt="Imagen de perfil" width="40" height="40" class="rounded-circle">
+                        {% else %}
+                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                        {% endif %}
+                        
+                        
+                        
+                        </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
-                        <li><a class="dropdown-item" href="#">Cambiar imagen</a></li>
+                        <li><a class="dropdown-item" href="{% url 'editar_usuario' %}">Editar Usuario</a></li>
+                        <li><a class="dropdown-item" href="{% url 'avatar' %}">Cambiar imagen de Perfil</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><form method="post" action="{% url 'logout' %}">    
                             {%csrf_token%}

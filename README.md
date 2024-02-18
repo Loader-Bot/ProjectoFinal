@@ -22,7 +22,7 @@ La NavBar contiene los accesos a las siguientes secciones:
 -Editar Imagen de Perfil
 
 # Video
-[Link video]
+[Link video]https://drive.google.com/file/d/17jbwGNn-71kquKHR9ILck5HXL4sp1E94/view?usp=sharing
 
 #Pagina Principal
 

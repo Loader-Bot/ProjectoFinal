@@ -2,7 +2,7 @@
 
 CoderHouse Python Projecto Final 
 
-#Autor:
+# Autor:
 Elaborado en su totalidad por German Gonzalez
 
 # Requisitos
@@ -22,9 +22,9 @@ La NavBar contiene los accesos a las siguientes secciones:
 -Editar Imagen de Perfil
 
 # Video
-[Link video]https://drive.google.com/file/d/17jbwGNn-71kquKHR9ILck5HXL4sp1E94/view?usp=sharing
+https://drive.google.com/file/d/17jbwGNn-71kquKHR9ILck5HXL4sp1E94/view?usp=sharing
 
-#Pagina Principal
+# Pagina Principal
 
 Contiene la NavBar con todas las opciones y se pueden ver todos los posts publicados.
 Enlace: http://127.0.0.1:8000/app/

@@ -1,9 +1,9 @@
 # Projecto Final
 
-CoderHouse Python Projecto Final 
+CoderHouse Python Projecto Final. 
 
 # Autor:
-Elaborado en su totalidad por German Gonzalez
+Elaborado en su totalidad por German Gonzalez.
 
 # Requisitos:
 pip install Pillow

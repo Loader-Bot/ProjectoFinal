@@ -55,11 +55,11 @@ Permite acceder a cada articulo en su totalidad
 
 Enlace: http://127.0.0.1:8000/app/post_detalles/1
 
-#Pagina para editar publicaciones:
+# Pagina para editar publicaciones:
 
 Enlace: http://127.0.0.1:8000/app/login/editar_post/1
 
-#Pagina para borrar publicacones:
+# Pagina para borrar publicacones:
 Requiere confirmacion y que el usuario correspondiente haya iniciado sesion para que se pueda hacer:
 
 Enlace: http://127.0.0.1:8000/app/borrar_post/1

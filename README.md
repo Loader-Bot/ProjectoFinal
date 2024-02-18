@@ -5,10 +5,10 @@ CoderHouse Python Projecto Final
 # Autor:
 Elaborado en su totalidad por German Gonzalez
 
-# Requisitos
+# Requisitos:
 pip install Pillow
 
-
+# Descripcion:
 Web App con Python en Django
 El Front-End utiliza Bootstrap, aplicando herencias.
 Tiene dos CRUDS, usuarios y publicaciones.
@@ -21,20 +21,20 @@ La NavBar contiene los accesos a las siguientes secciones:
 -Editar Perfil
 -Editar Imagen de Perfil
 
-# Video
+# Video:
 https://drive.google.com/file/d/17jbwGNn-71kquKHR9ILck5HXL4sp1E94/view?usp=sharing
 
-# Pagina Principal
+# Pagina Principal:
 
 Contiene la NavBar con todas las opciones y se pueden ver todos los posts publicados.
 Enlace: http://127.0.0.1:8000/app/
 
-# Pagina Login
+# Pagina Login:
 Donde el usuario ya registrado puede iniciar sesion. De ser exitoso devuelve al sitio HOME.
 
 Enlace: http://127.0.0.1:8000/app/login
 
-# Pagina de registro de usuario
+# Pagina de registro de usuario:
 Donde puede crearse un nuevo usuario.
 
 Enlace: http://127.0.0.1:8000/app/registrar_usuario
@@ -49,7 +49,7 @@ Se puede poner un titulo, descripcion , cuerpo e imagen. Se guarda la autoria, f
 
 Enlace: http://127.0.0.1:8000/app/publicar_post
 
-# Detalle de Pagina
+# Detalle de Pagina:
 
 Permite acceder a cada articulo en su totalidad
 
